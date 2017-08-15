@@ -1,0 +1,13 @@
+SQL> CREATE TABLE EMP (ID NUMBER(7), LAST_NAME VARCHAR2(25), FIRST_NAME VARCHAR2(25), DEPT_ID NUMBER(7) CONSTRAINT FK_EMP_DEPT_ID REFERENCES DEPT (ID));
+
+Table created.
+
+SQL> DESCRIBE EMP;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ID                                                 NUMBER(7)
+ LAST_NAME                                          VARCHAR2(25)
+ FIRST_NAME                                         VARCHAR2(25)
+ DEPT_ID                                            NUMBER(7)
+
+SQL> spool off

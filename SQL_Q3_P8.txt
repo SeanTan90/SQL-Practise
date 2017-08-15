@@ -1,0 +1,5 @@
+SQL> INSERT INTO MY_EMPLOYEE VALUES (1, 'Patel', 'Ralph', 'rpatel', 895);
+
+1 row created.
+
+SQL> spool off

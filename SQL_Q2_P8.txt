@@ -1,0 +1,10 @@
+SQL> DESCRIBE MY_EMPLOYEE;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ID                                        NOT NULL NUMBER(38)
+ LAST_NAME                                          VARCHAR2(20)
+ FIRST_NAME                                         VARCHAR2(20)
+ USERID                                             VARCHAR2(20)
+ SALARY                                             NUMBER(38)
+
+SQL> spool off

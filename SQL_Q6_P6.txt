@@ -1,0 +1,9 @@
+SQL> SELECT DEPARTMENT_ID, LAST_NAME, JOB_ID FROM EMPLOYEES WHERE DEPARTMENT_ID IN (SELECT DEPARTMENT_ID FROM DEPARTMENTS WHERE DEPARTMENT_NAME = 'Executive');
+
+DEPARTMENT_ID LAST_NAME                 JOB_ID                                  
+------------- ------------------------- ----------                              
+           90 King                      AD_PRES                                 
+           90 Kochhar                   AD_VP                                   
+           90 De Haan                   AD_VP                                   
+
+SQL> spool off

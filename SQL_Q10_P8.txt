@@ -1,0 +1,61 @@
+SQL> INSERT INTO MY_EMPLOYEE (ID, LAST_NAME, FIRST_NAME, USERID, SALARY) VALUES (3, 'Biri', 'Ben', 'bbiri', 1100);
+
+1 row created.
+
+SQL> INSERT INTO MY_EMPLOYEE (ID, LAST_NAME, FIRST_NAME, USERID, SALARY) VALUES (4, 'Newman', 'Chad', 'cnewman', 750);
+
+1 row created.
+
+SQL> SELECT * FROM MY_EMPLOYEE;
+
+        ID LAST_NAME            FIRST_NAME           USERID                     
+---------- -------------------- -------------------- --------------------       
+    SALARY                                                                      
+----------                                                                      
+         1 Patel                Ralph                rpatel                     
+       895                                                                      
+                                                                                
+         2 Danc                 Betty                bdancs                     
+       860                                                                      
+                                                                                
+         3 Biri                 Ben                  bbiri                      
+      1100                                                                      
+                                                                                
+
+        ID LAST_NAME            FIRST_NAME           USERID                     
+---------- -------------------- -------------------- --------------------       
+    SALARY                                                                      
+----------                                                                      
+         4 Newman               Chad                 cnewman                    
+       750                                                                      
+                                                                                
+
+SQL> UPDATE MY_EMPLOYEE SET LAST_NAME = 'Drexler' WHERE ID = 3;
+
+1 row updated.
+
+SQL> SELECT * FROM MY_EMPLOYEE;
+
+        ID LAST_NAME            FIRST_NAME           USERID                     
+---------- -------------------- -------------------- --------------------       
+    SALARY                                                                      
+----------                                                                      
+         1 Patel                Ralph                rpatel                     
+       895                                                                      
+                                                                                
+         2 Danc                 Betty                bdancs                     
+       860                                                                      
+                                                                                
+         3 Drexler              Ben                  bbiri                      
+      1100                                                                      
+                                                                                
+
+        ID LAST_NAME            FIRST_NAME           USERID                     
+---------- -------------------- -------------------- --------------------       
+    SALARY                                                                      
+----------                                                                      
+         4 Newman               Chad                 cnewman                    
+       750                                                                      
+                                                                                
+
+SQL> spool off;

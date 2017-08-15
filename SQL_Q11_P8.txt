@@ -1,0 +1,5 @@
+SQL> UPDATE MY_EMPLOYEE SET SALARY = 1000 WHERE SALARY < 900;
+
+3 rows updated.
+
+SQL> spool off;

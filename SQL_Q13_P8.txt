@@ -1,0 +1,5 @@
+SQL> DELETE FROM MY_EMPLOYEE WHERE USERID = 'bdancs';
+
+1 row deleted.
+
+SQL> spool off;
